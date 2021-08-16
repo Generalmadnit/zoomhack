@@ -1,7 +1,6 @@
 """
 
-project stopped because i dont getting how to automate greatlearning 
-website .site elements have only classes.
+project to automate online classess
 """
 
 
@@ -46,14 +45,7 @@ class bot():
 PATH  = "C:\Program Files (x86)\chromedriver" 
 driver= webdriver.Chrome(PATH)  
 
-a =bot("baramsivarami@gmail.com" ,"7032753722",driver)
+a =bot(your_id  ,your_password,driver)
 a.login()
 a.authenticate()
 
-# a.changeToOnlineclass()
-# a = bot("kakumanulalitha@gmail.com","K.MRT.31",driver)
-# a.login()
-# a =bot("gantahanumantharao123@gmail.com" ,"hanumanth123",driver)
-# a.login()
-# a.changeToOnlineclass()
-# a.authenticate()
