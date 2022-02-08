@@ -30,6 +30,11 @@ class student():
     
     def close_website(self):
         driver.close()
+        
+    def getDetails(self):
+        myinfo_elem = driver.find_element_by_id('ctl00_cpHeader_ucStud_lnkYourInformation')
+        myinfo = myinfo_elem.get_attribute('innerHTML')
+        print(myinfo)
 
 PATH ="C:\Program Files (x86)\chromedriver.exe"
 driver = webdriver.Chrome(PATH)
